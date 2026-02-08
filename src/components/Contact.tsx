@@ -4,10 +4,12 @@ import Header from "./Header";
 import img98 from "../../public/assets/male3.jpg";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 const Contact = () => {
 
-   const [showThankYou, setShowThankYou] = useState(false);
+  const navigate = useNavigate();
+
   const containerVariants = {
     hidden: {},
     show: {
@@ -43,7 +45,7 @@ const Contact = () => {
       }
     );
     e.target.reset();
-    setShowThankYou(true);
+    navigate("/thank-you");
   };
 
 
@@ -373,37 +375,6 @@ const Contact = () => {
         {/* Footer */}
         <Footer />
       </motion.div>
-      {showThankYou && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center"
-        >
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 200 }}
-            className="bg-white rounded-2xl p-8 max-w-sm w-full text-center"
-          >
-            <h2 className="text-gray-800 text-2xl font-semibold mb-3">
-              Thank you!
-            </h2>
-            <p className="text-gray-600 mb-6">
-              Your message has been sent successfully. We’ll get
-              back to you soon.
-            </p>
-
-            <button
-              onClick={() => setShowThankYou(false)}
-              className="px-6 py-2 rounded-full bg-black text-white hover:bg-black/80 transition"
-            >
-              Close
-            </button>
-          </motion.div>
-        </motion.div>
-      )}
     </div>
   );
 };

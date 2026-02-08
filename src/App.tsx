@@ -11,12 +11,13 @@ import Specificproject from "./components/Specificproject";
 import SplashScreen from "./components/SplashScreen";
 import ScrollToTop from "./components/ScrollToTop";
 import Projects from "./components/Projects";
+import Thankyou from "./components/Thankyou";
 
 const AppContent = () => {
   const location = useLocation();
   const [showSplash, setShowSplash] = useState(false);
   const [splashDone, setSplashDone] = useState(false);
-
+  
   useEffect(() => {
     if (location.pathname === "/") {
       setShowSplash(true);
@@ -47,6 +48,7 @@ const AppContent = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/project/:title" element={<Specificproject />} />
+           <Route path="/thank-you" element={<Thankyou />} />
         </Routes>
       )}
     </>
