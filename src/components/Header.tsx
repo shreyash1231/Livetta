@@ -31,7 +31,7 @@ const Header = ({ bgColor = DEFAULT_BG }) => {
 
   const socialLinks = {
     Instagram: "https://www.instagram.com/livettainterior?igsh=OHlldTFnaGwwMG9o",
-    FaceBook: "#",
+    FaceBook: "https://www.facebook.com/share/1DB6p9v2yG/",
   };
 
   useEffect(() => {

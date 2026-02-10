@@ -21,7 +21,7 @@ const Contact = () => {
 
   const socialLinks = {
       Instagram: "https://www.instagram.com/livettainterior?igsh=OHlldTFnaGwwMG9o",
-      FaceBook: "#",
+      FaceBook: "https://www.facebook.com/share/1DB6p9v2yG/",
     };
   const itemVariants = {
     hidden: { opacity: 0, y: 40 },
@@ -38,7 +38,7 @@ const Contact = () => {
     const formData = new FormData(e.target);
 
     await fetch(
-      "https://formsubmit.co/ajax/livettainterior@gmail.com",
+      "https://formsubmit.co/ajax/shreyashchandwadkar@gmail.com",
       {
         method: "POST",
         body: formData,
