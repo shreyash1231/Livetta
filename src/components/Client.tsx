@@ -1,9 +1,9 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState } from "react";
-import img98 from "../../public/assets/femail1.jpg"
-import img110 from "../../public/assets/male1.jpg";
-import img112 from "../../public/assets/male2.jpg";
-import img111 from "../../public/assets/female2.jpg";
+import img110 from "../../public/assets/WhatsApp Image 2026-02-10 at 2.55.09 PM (1).jpeg"
+import img98 from "../../public/assets/WhatsApp Image 2026-02-10 at 2.55.09 PM (2).jpeg";
+import img111 from "../../public/assets/WhatsApp Image 2026-02-10 at 2.55.10 PM (1).jpeg";
+import img112 from "../../public/assets/WhatsApp Image 2026-02-10 at 2.55.10 PM.jpeg";
 import { motion } from "framer-motion";
 const clients = [
   {

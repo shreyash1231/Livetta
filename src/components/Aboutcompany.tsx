@@ -7,7 +7,7 @@ import Team from "./Team";
 import Footer from "./Footer";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import img98 from "../../public/assets/male3.jpg";
+import img98 from "../../public/assets/WhatsApp Image 2026-02-10 at 2.55.10 PM.jpeg";
 const containerVariants = {
   hidden: {},
   show: {
