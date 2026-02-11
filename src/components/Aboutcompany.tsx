@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import img98 from "../../public/assets/WhatsApp Image 2026-02-10 at 2.55.10 PM.jpeg";
+import { Helmet } from "react-helmet-async";
 const containerVariants = {
   hidden: {},
   show: {
@@ -51,6 +52,22 @@ const Aboutcompany = () => {
   ];
 
   return (
+    <>
+    <Helmet>
+      <title>
+        About Us | Trusted Interior Design Experts in Bengaluru
+      </title>
+
+      <meta
+        name="description"
+        content="We are a Bengaluru-based interior design team delivering premium, functional and aesthetic home interiors with expert designers and a customer-first approach."
+      />
+
+      <meta
+        name="keywords"
+        content="about interior designers, interior design company bengaluru, interior design experts, home interior professionals, premium interior brand"
+      />
+    </Helmet>
     <div className="bg-stone-100 min-h-screen">
       <Header bgColor="#f5f5f4" />
 
@@ -247,6 +264,7 @@ const Aboutcompany = () => {
         </motion.div>
       </motion.div>
     </div>
+    </>
   );
 };
 
