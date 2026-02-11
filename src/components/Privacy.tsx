@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import SEO from "./SEO";
 
 /* Animation variants */
 const containerVariants = {
@@ -25,21 +25,11 @@ const itemVariants = {
 const Privacy = () => {
   return (
     <>
-    <Helmet>
-        <title>
-          Privacy Policy | Data Protection & User Privacy
-        </title>
-
-        <meta
-          name="description"
-          content="Read our privacy policy to understand how we collect, use and protect your personal information when you visit or interact with our website."
-        />
-
-        <meta
-          name="keywords"
-          content="privacy policy, data protection policy, website privacy terms, user data privacy, personal information policy"
-        />
-      </Helmet>
+       <SEO
+        title="Privacy Policy | Data Protection & User Privacy"
+        description="Read our privacy policy to understand how we collect, use and protect your personal information when you visit or interact with our website."
+        keywords="privacy policy, data protection policy, website privacy terms, user data privacy, personal information policy"
+      />
     <div className="bg-stone-100 min-h-screen">
       <Header bgColor="#f5f5f4" />
 

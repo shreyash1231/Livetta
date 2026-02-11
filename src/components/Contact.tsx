@@ -5,7 +5,7 @@ import img98 from "../../public/assets/WhatsApp Image 2026-02-10 at 2.55.10 PM.j
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import SEO from "./SEO";
 
 const Contact = () => {
 
@@ -52,21 +52,11 @@ const Contact = () => {
 
   return (
     <>
-       <Helmet>
-        <title>
-          Contact Interior Designers in Bengaluru | Free Consultation
-        </title>
-
-        <meta
-          name="description"
-          content="Get in touch with our interior designers in Bengaluru for a free consultation. Discuss your home interior ideas, budget and design requirements today."
-        />
-
-        <meta
-          name="keywords"
-          content="contact interior designers bengaluru, interior design consultation, home interior enquiry, interior design contact page"
-        />
-      </Helmet>
+      <SEO
+        title="Contact Interior Designers in Bengaluru | Free Consultation"
+        description="Get in touch with our interior designers in Bengaluru for a free consultation. Discuss your home interior ideas, budget and design requirements today."
+        keywords="contact interior designers bengaluru, interior design consultation, home interior enquiry, interior design contact page"
+      />
     <div className="bg-stone-100 min-h-screen">
       <Header bgColor="#f5f5f4" />
       <motion.div
@@ -393,7 +383,7 @@ const Contact = () => {
         <Footer />
       </motion.div>
     </div>
-        </>
+    </>
   );
 };
 
