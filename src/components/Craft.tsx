@@ -1,7 +1,10 @@
 import { ArrowRight } from "lucide-react";
 import bgimage from "../../public/assets/Home - Where a Space Begins to Feel Like Home/Where a Space Begins to Feel Like Home.webp";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 const Craft = () => {
+
+  const navigate = useNavigate();
 
     const containerVariants = {
         hidden: {},
@@ -99,7 +102,7 @@ const Craft = () => {
       className="flex justify-center cursor-pointer"
     >
       <motion.a
-        href={`mailto:livettainterior@gmail.com`}
+        onClick={()=>navigate("/contact")}
         className="w-73 text-[12px] md:text-sm flex items-center
                    border px-6 py-3 rounded-full text-white"
       >

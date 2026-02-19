@@ -18,7 +18,7 @@ import img110 from "../../public/assets/Images (110).webp";
 import img109 from "../../public/assets/Images (109).webp";
 import img108 from "../../public/assets/Images (108).webp";
 import img107 from "../../public/assets/Images (107).webp";
-
+import { useNavigate } from 'react-router-dom';
 
 const AnimatedCounter = ({ value, duration = 2 }:any) => {
   const ref = useRef<HTMLSpanElement | null>(null);
@@ -47,10 +47,13 @@ const AnimatedCounter = ({ value, duration = 2 }:any) => {
 };
 
 const AboutSection = () => {
-  const sloganWords = [
-    'Every', 'journey', 'has', 'a', 'beginning.',
- 'Ours', 'is', 'guided', 'by', 'belief,', 'intention,', 'and', 'a', 'deep', 'respect', 'for', 'what', 'home', 'truly', 'means.',
-  ];
+  const navigate = useNavigate();
+ const sloganWords = [
+  'Livetta', 'Interiors', 'is', 'a', 'Bengaluru-based', '3D', 'interior',
+  'design', 'studio', 'offering', 'design-first', 'interior',
+  'solutions', 'and', 'execution', 'support.'
+];
+
 
 
   const statsData = [
@@ -244,7 +247,7 @@ const AboutSection = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="text-black text-[24px] md:text-[28px] lg:text-[30px] font-semibold leading-[1.4] tracking-[-0.03em]"
+                className="text-black text-[14px] font-semibold leading-[1.4] tracking-[-0.03em]"
                 style={{ 
                   fontFamily: 'Inter, sans-serif',
                   willChange: 'transform'
@@ -277,10 +280,10 @@ const AboutSection = () => {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-6">
           
           <motion.a
-            href={`mailto:livettainterior@gmail.com`}
+            onClick={()=>navigate("/contact")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-4 px-5 py-3 bg-white rounded-full shadow-[0_2px_1px_-1px_rgba(0,0,0,0.06)] border border-white/30 hover:shadow-lg transition-all duration-300"
+            className="cursor-pointer inline-flex items-center gap-4 px-5 py-3 bg-white rounded-full shadow-[0_2px_1px_-1px_rgba(0,0,0,0.06)] border border-white/30 hover:shadow-lg transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

@@ -9,6 +9,7 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import img98 from "../../public/assets/WhatsApp Image 2026-02-10 at 2.55.10 PM.jpeg";
 import SEO from "./SEO";
+import { useNavigate } from "react-router-dom";
 const containerVariants = {
   hidden: {},
   show: {
@@ -28,6 +29,7 @@ const itemVariants = {
 };
 
 const Aboutcompany = () => {
+  const navigate = useNavigate();
   const timelineData = [
     {
       year: "2026",
@@ -86,7 +88,7 @@ const Aboutcompany = () => {
               <div className="flex gap-5">
                 <img
                   src={img98}
-                  alt="Mark Jackson"
+                  alt="Nishant Tyagi"
                   loading="lazy"
                   className="h-16 w-16 rounded-full object-cover"
                 />
@@ -98,7 +100,7 @@ const Aboutcompany = () => {
                     variants={itemVariants}
                     className="text-black font-semibold"
                   >
-                    Mark Jackson
+                    Nishant Tyagi
                   </motion.span>
                   <motion.span
                     variants={itemVariants}
@@ -116,12 +118,12 @@ const Aboutcompany = () => {
 
             <div className="xl:col-span-3 flex flex-col gap-5 xl:gap-10 text-black">
               <strong className="xl:text-2xl leading-relaxed">
-                We believe interior design is more than aesthetics — it’s about
-                emotion, functionality, and clarity. Every space we design is
-                thoughtfully crafted to reflect refined taste while serving real
-                everyday needs. From concept to final visualization, our process
-                gives homeowners complete confidence in their design decisions,
-                helping them move forward without uncertainty or compromise.
+              We believe interior design is more than aesthetics; it’s about
+              emotion, functionality, and clarity. As a premium 3D interior design studio, we create
+              thoughtfully designed homes that reflect refined taste and support modern living.
+              From concept to detailed 3D visualisation, our interior design process gives
+              homeowners complete confidence before execution, eliminating uncertainty and
+              ensuring every decision feels intentional.
               </strong>
 
               <strong className="text-gray-400 text-sm xl:text-xl leading-relaxed">
@@ -203,7 +205,7 @@ const Aboutcompany = () => {
             </div>
             <div className="flex xl:items-center gap-4 cursor-pointer">
                   <a
-                    href={`mailto:livettainterior@gmail.com`}
+                    onClick={()=>navigate("/contact")}
             className={`hidden md:flex items-center gap-4 border px-12 xl:px-12 xl:py-2 rounded-full text-sm text-black`}
           >
             <strong>Say "Hello"</strong>

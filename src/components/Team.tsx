@@ -54,11 +54,11 @@ const Team = () => {
               <motion.strong variants={itemVariants}>
                 <img src={logo} loading="lazy" className="w-20 h-20" />
               </motion.strong>
-              <motion.strong variants={itemVariants} className="font-semibold">
-                We believe great spaces are created by the right people, not
-                large teams. Our work is shaped through carefully chosen
-                collaborations — designers, specialists, and thinkers aligned
-                with our values and standards.
+               <motion.strong variants={itemVariants} className="font-semibold">
+                We believe great spaces are created by the right people, not large
+                teams. At Livetta Interiors, our 3D interior design work is shaped 
+                through carefully chosen collaborations — designers and specialists 
+                aligned with our values and standards.
               </motion.strong>
             </motion.strong>
           </motion.div>

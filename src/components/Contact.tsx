@@ -89,7 +89,7 @@ const Contact = () => {
               <img
                 src={img98}
                 loading="lazy"
-                alt="Mark Jackson"
+                alt="Nishant Tyagi"
                 className="h-16 w-16 rounded-full object-cover"
               />
               <motion.div
@@ -100,7 +100,7 @@ const Contact = () => {
                   variants={itemVariants}
                   className="text-black font-semibold"
                 >
-                  Mark Jackson
+                  Nishant Tyagi
                 </motion.span>
                 <motion.span
                   variants={itemVariants}

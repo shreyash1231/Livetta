@@ -89,7 +89,7 @@ const Header = ({ bgColor = DEFAULT_BG }) => {
 
           <div className="flex items-center gap-4 cursor-pointer">
             <a
-              href={`mailto:livettainterior@gmail.com`}
+               onClick={()=>navigate("/contact")}
               className={`hidden md:flex items-center gap-4 border px-12 py-2 xl:px-12 xl:py-2 rounded-full text-sm ${textColor}`}
             >
               <strong>Say "Hello"</strong>
@@ -150,7 +150,7 @@ const Header = ({ bgColor = DEFAULT_BG }) => {
                     (000) 000-00-00
                   </a> */}
                   <a
-                    href={`mailto:livettainterior@gmail.com`}
+                     onClick={()=>navigate("/contact")}
                     className="text-white hidden lg:block"
                   >
                    livettainterior@gmail.com
