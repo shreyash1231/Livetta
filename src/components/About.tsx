@@ -235,7 +235,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            2025
+            {/* 2025 */}
           </motion.p>
 
           <div className="flex flex-wrap gap-x-[0.35em] gap-y-1 max-w-4xl">
@@ -247,7 +247,7 @@ const AboutSection = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="text-black text-[14px] font-semibold leading-[1.4] tracking-[-0.03em]"
+                className="text-black text-[30px] font-semibold leading-[1.4] tracking-[-0.03em]"
                 style={{ 
                   fontFamily: 'Inter, sans-serif',
                   willChange: 'transform'

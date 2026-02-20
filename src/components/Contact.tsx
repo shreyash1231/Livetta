@@ -39,7 +39,7 @@ const Contact = () => {
     const formData = new FormData(e.target);
 
     await fetch(
-      "https://formsubmit.co/ajax/shreyashchandwadkar@gmail.com",
+      "https://formsubmit.co/ajax/livettainterior@gmail.com",
       {
         method: "POST",
         body: formData,
@@ -239,7 +239,7 @@ const Contact = () => {
                 <input
                   type="tel"
                   name="Phone"
-                  placeholder="Phone Number (Optional)"
+                  placeholder="Phone Number *"
                   className="border-b border-gray-300 bg-transparent py-3 focus:outline-none md:col-span-2"
                 />
               </motion.div>
